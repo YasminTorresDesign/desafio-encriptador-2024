@@ -8,6 +8,12 @@
     line-height: 90%;
 }
 
+:root{
+    --color-primario:#0A3871;
+    --color-hover:#356EA9;
+
+}
+
 .logo{
     padding-top: 10px;
     margin-left: 10px;
@@ -22,12 +28,12 @@ main{
 
 .text-area{
     border: none;
-    color: #0A3871;
+    color: var(--color-primario);
     margin-top: 90px;
     text-transform: lowercase;
 }
 
-::placeholder{color:#0A3871;}
+::placeholder{color: var(--color-primario);}
     .text-area:focus{
         outline: none;
     }
@@ -38,7 +44,7 @@ main{
     background-repeat: no-repeat;
     bottom: none;
     border-radius: 24px;
-    color: #0A3871;
+    color: var(--color-primario);
     margin-left: 98px;
     margin-top: 20px;
     padding-left: 20px;
@@ -58,7 +64,7 @@ main{
     background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    color: #0A3871;
+    color: var(--color-primario);
     cursor: pointer;
     height: 67px;
     margin-left: 30px;
@@ -66,7 +72,7 @@ main{
 }
 
 .btn-encriptar{
-    background:#0A3871;
+    background: var(--color-primario);
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: white;
@@ -78,7 +84,7 @@ main{
 .copiar{
     border: 1px solid #0A3871;
     border-radius: 24px;
-    color: #0A3871;
+    color: var(--color-primario);
     cursor: pointer;
     height: 67px;
     margin-left: 108px;
@@ -87,6 +93,14 @@ main{
     width: 336px;
 }
 
+.btn-desencriptar:hover,
+.btn-encriptar:hover,
+.copiar:hover {
+    background-color: var(--color-hover);
+}
+
+
+
 .info{
     color: #495057;
     font-size: 18px;
@@ -94,8 +108,8 @@ main{
 
 .footer{
     font-family: 'inter';
-    background: #0A3871;
-    color:#0A3871;
+    background: var(--color-primario);
+    color: var(--color-primario);
     font-size: 18px;
     font-weight: 400;
     text-align: center;
